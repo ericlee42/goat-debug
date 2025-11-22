@@ -26,6 +26,7 @@ func main() {
 	)
 
 	flag.StringVar(&NodeURL, "node", "tcp://localhost:26657", "The node to connect to")
+	flag.Parse()
 
 	var (
 		autoCliOpts        autocli.AppOptions
